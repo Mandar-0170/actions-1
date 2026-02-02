@@ -14,3 +14,6 @@ jobs:
           
           - name: Read files
             run: cat README.md
+          
+          - name: Random
+            run: echo "Random"
