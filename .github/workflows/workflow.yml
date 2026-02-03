@@ -9,10 +9,15 @@ jobs:
             - name: Checkout
               uses: actions/checkout@v6
             - name: Welcome Message
-              run: echo "My First Github Actions Workflow"
+              run: |
+                echo "My First Github Actions Workflow"
+                ls -ltra
+                cat README.md
+            - name: Generate ASCII
+              run: cowsay -f cat "Run for a cover, I am a Cat!.....Meow" >>dragon.txt
 
-            - name: List Files
-              run: ls
+            # - name: List Files
+            #   run: ls
 
-            - name: Read Files
-              run: cat README.md
+            # - name: Read Files
+            #   run: cat README.md
